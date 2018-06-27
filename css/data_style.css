@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    transition: background .3s;
+    color: black;
+}
+
+
+.clear {
+    clear: both;
+}
+.activePage {
+    background: gray;
+}
+
+/* header block */
+.header {
+    border-bottom: 2px solid #acacac;
+}
+.wrapper {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 50px 100px;
+}
+.headerBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* logo block */
+.logo h1 {
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+}
+.logo h1 span {
+    display: block;
+    font-weight: 400;
+}
+.logo .info p {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-right: 15px;
+    color: #acacac;
+}
+
+/*.logo .info p:last-child{ !*псевдоэлемент почитать*!*/
+/*margin-right: 0;*/
+/*}*/
+
+.logo .info span {
+    font-weight: normal;
+}
+
+/* menu block */
+.menu li {
+    display: inline-block;
+}
+
+/*делает кнопки*/
+.menu ul li a {
+    display: block;
+    padding: 5px 10px;
+}
+/*для нажатой кнопки*/
+.menu ul li a:hover {
+    background: gray;
+}
+/*main block*/
+.main .bio { /*боковой блок с короткой информацией*/
+    background-color: #edf3f0;
+    font-size: 13px;
+    border: solid #acacac;
+    width: 300px;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    float: right;
+}
+td.bfone{ /*левый столбец в таблице короткой биографии справа*/
+    background-color: #aabab8;
+    font-weight: bold;
+    padding: 3px;
+}
+
+.fraza{  /*!!!!!!!!!!!!!!!!!!!!!!!!!разобраться с выравниванием*/
+    font-size: 12px;
+    font-style: italic;
+    border-color: #bcced6;
+    border-radius: 7px;
+    background-color: #eaf2f5;
+    padding: 12px;
+    width: 700px;
+    /*float: right; делает обтекающим, а не надо*/
+}
+
+/*Как расположить послнднего автора цитаты ч-з Span справа?*/
+.fraza span{
+    text-align: right;
+}
+
+.photor{ /*фотосноска справа*/
+         border: 1px solid #acacac;
+         padding: 5px;
+         overflow: hidden; /* ??? СВОЙСТВО ??? */
+         float: right;
+         margin: 0px 0 20px 20px;
+         width: auto;
+         height: auto;
+         font-size: 12px;
+         text-align: center;
+     }
+
+.photor2{ /*фотосноска слева узкая*/
+    border: 1px solid #acacac;
+    padding: 5px;
+    overflow: hidden;
+    float: right;
+    margin: 20px 0 20px 20px;
+    width: 150px;
+    height: auto;
+    font-size: 12px;
+    text-align: center;
+}
+
+.photol{ /*фотосноска слева широкая*/
+    border: 1px solid #acacac;
+    padding: 5px;
+    overflow: hidden;
+    float: left;
+    margin: 20px 20px 20px 0px;
+    width: 250px;
+    height: auto;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* footer block*/
+.footer {
+    border-top: 2px solid #acacac;
+    text-align: center;
+}
